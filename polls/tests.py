@@ -14,7 +14,7 @@ class TestPoll(APITestCase):
         # ...
         self.factory = APIRequestFactory()
         self.view = views.PollViewSet.as_view({'get': 'list'})
-        self.uri = '/polls/'
+        self.uri = '/polls/polls/'
         self.user = self.setup_user()
         self.token = Token.objects.create(user=self.user)
         self.token.save()
