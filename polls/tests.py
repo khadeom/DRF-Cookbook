@@ -64,3 +64,5 @@ class TestPoll(APITestCase):
         self.assertEqual(response.status_code, 201,
                          'Expected Response Code 201, received {0} instead.'
                          .format(response.status_code))
+
+    #test circle ci
