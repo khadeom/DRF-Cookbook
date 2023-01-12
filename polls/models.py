@@ -26,6 +26,3 @@ class Vote(models.Model):
 
     class Meta:
         unique_together = ("poll", "voted_by")
-
-class ModelTest(models.Model):
-    name = models.CharField(max_length=50, null=True)
